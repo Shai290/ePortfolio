@@ -2,6 +2,10 @@
 
 Hi there, and welcome to my personal e-portfolio! This website showcases a small description about me, my hobbies, my skills and some of my projects. It's a place where I highlight my passion for coding, creating, and designing. Feel free to explore my portfolio to learn more about me and my work :>
 
+## Live Demo
+
+You can view the live version of the website here: [My Portfolio Website](https://shai290.github.io/ePortfolio/)
+
 ## Features
 
 - **Home Page**: A brief introduction and overview of who I am.
