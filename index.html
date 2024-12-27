@@ -1,18 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Darkmode</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello and Welcome! (˶ˆᗜˆ˵)</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Some random website</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices libero sit amet pharetra ullamcorper. Nullam ante neque, mattis ut diam consequat, rhoncus cursus mi. Cras non leo consequat, blandit risus id, tincidunt elit. Nunc gravida enim id velit aliquet, vel laoreet magna vehicula. Aenean eget lacus eget libero finibus semper. Nam id augue vel dolor tincidunt efficitur ut ut augue. Duis et ligula sodales, vulputate turpis nec, fringilla nulla. In nisl ipsum, ornare sed interdum sit amet, congue a velit. In hac habitasse platea dictumst. Pellentesque at ante ut eros laoreet commodo porta venenatis turpis. Suspendisse sollicitudin dolor quis scelerisque tristique. Sed eget finibus turpis. Sed vehicula magna lacus, a congue erat posuere vitae. Nulla porttitor, enim nec euismod faucibus, orci quam cursus neque, eu porttitor ligula turpis a mi. Integer id nibh felis. Mauris ac ultrices orci, a fermentum enim. Duis hendrerit, mauris a tincidunt venenatis, nulla nunc elementum lorem, sed mollis massa elit at nulla.</p>
-        <button class="cta-button">Go Premium</button>
-        <button>More Info</button>
-    </header>
+    <!--Navigation Section-->
+    <nav>
+        <div class="nav-container">
+          <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+            MY <span>E-PORTFOLIO</span>
+          </div>
+          <div class="links">
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#home">Home Page</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#about">About Me</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#projects">My Projects</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#contact">Contact Me</a></div>
+          </div>
+          <i class="fa-solid fa-bars hamburg" onclick="hamburg()"> </i>
+        </div>
+        <div class="dropdown">
+          <div class="links">
+            <a href="#home">Home Page</a>
+            <a href="#about">About Me</a>
+            <a href="#projects">My Projects</a>
+            <a href="#contact">Contact Me</a>
+            <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+          </div>
+        </div>
+      </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <div class="main-container">
+      <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+        <img src="1.jpg" alt="Image of Shaira">
+      </div>
+      <div class="content">
+        <h3 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">
+          Hey I'm <span>Shaira!</span>
+        </h3>
+        <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">
+          A college student from the Philippines who aspires to be a Game and UI/UX Designer.
+        </p>
+        <div class="social-links">
+          <a href="https://github.com/Shai290" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.facebook.com/shairacutekayo" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/shairadadios/" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-instagram"></i></a>
+          </a>
+        </div>        
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="about-section-container" id="about">
+    <div class="about-section">
+      <div class="section-heading">
+        <article class="section-heading-article" tabindex="0" aria-label="About me heading">
+          About Me
+        </article>
+      </div>
+    
+      <div class="info-dp-section">
+        <div class="about-info">
+          <p tabindex="0">
+            Hello! My name is Shaira Jane Dadios. I am a 3rd Year college student at the University of Science and Technology of Southern Philippines. Although coding isn't really my forte, I do love implementing it in making games, designing websites, and more. I often help in making game assets and designing UI. I'm interested mostly in designing, but also in few other fields such as web security and data analytics.
+          </p>
+        </div>
+  
+        <div class="languages-square">
+          <div class="square languages-square">
+            <h4 class="text">Languages that I Know</h4>
+            <p class="glowing-text">C++</p>
+            <p class="glowing-text">Python</p>
+            <p class="glowing-text">Java</p>
+            <p class="glowing-text">JavaScript</p>
+            <p class="glowing-text">HTML</p>
+            <p class="glowing-text">CSS</p>
+          </div>
+        </div>
+        
+        <div class="apps-square">
+          <div class="square apps-square">
+            <h4 class="text">Applications I Use</h4>
+            <p class="glowing-text">Canva</p>
+            <p class="glowing-text">Figma</p>
+            <p class="glowing-text">Adobe Photoshop</p>
+            <p class="glowing-text">Krita</p>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Projects Section-->
+  <section class="projects-section" id="projects">
+    <div class="projects-header">
+      <div class="section-heading">
+        <article class="section-heading-article" tabindex="0" aria-label="Projects heading">
+          Projects
+        </article>
+      </div>
+    </div>
+    <div class="carousel-container">
+      <div class="carousel">
+        <!-- Project 1 -->
+        <div class="carousel-item">
+          <h6 class="proj-title">Turing-Machine-Simulator</h6>
+          <p class="description"> A visual and interactive JavaScript-based Turing Machine Simulator designed for educational purposes.</p>
+          <img src="tm.jpg" alt="Turing Machine Simulator Screenshot">
+          <a href="https://github.com/Anoreh02/Turing-Machine-Simulator" target="_blank">View on GitHub</a>
+        </div>
+  
+        <!-- Project 2 -->
+        <div class="carousel-item">
+          <h6 class="proj-title">Shoe Detector System</h6>
+          <p class="description">Shoe Detector System Using YOLOv8n with Tkinter UI and MongoDB.</p>
+          <img src="sd.png" alt="Shoe Detector System Screenshot">
+          <a href="https://github.com/Anoreh02/shoe_detector" target="_blank">View on GitHub</a>
+        </div>
+  
+        <!-- Project 3 -->
+        <div class="carousel-item">
+          <h6 class="proj-title">Crack-the-Code</h6>
+          <p class="description">A guessing game created using Assembly language.</p>
+          <img src="ctc.png" alt="Crack the Code Screenshot">
+          <a href="https://github.com/Shai290/Crack-the-Code" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+  </section>
+  
+<!-- Conteact Section -->
+<section class="contact-section" id="contact">
+  <div class="about-section">
+    <div class="section-heading">
+      <article class="section-heading-article" tabindex="0" aria-label="About me heading">
+        Contact Me
+      </article>
+    </div>
+  </div>
+  <p>If you have any questions or inquiries, feel free to reach out!</p>
+
+  <!-- Embed Google Form -->
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd_20FY4K3M07dCtoEL11IQcpxsVHaAc7FffLnK06G7nWTsGg/viewform?embedded=true" width="640" height="643" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>"</iframe>
+</section>
+
+  <!-- Cloud Images -->
+  <img src="cloud 1.png" alt="Cloud" class="cloud cloud-left">
+  <img src="cloud 1.png" alt="Cloud" class="cloud cloud-right">
+  <img src="cloud 1.png" alt="Cloud" class="cloud cloud-1right">
+  <img src="cloud 1.png" alt="Cloud" class="cloud cloud-1left">
+
+  <!-- Static Stars -->
+  <div class="static-stars"></div>
+
+  <!-- Shooting Stars -->
+  <div class="shooting-stars">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <script src="main.js"></script>
 </body>
 </html>
